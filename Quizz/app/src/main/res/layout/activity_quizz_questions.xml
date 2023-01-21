@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizzQuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+
+        >
+
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#363A43"
+            android:textSize="22sp"
+            tools:text="Who is cr7 who is your fav footbaler.....?"
+
+
+            ></TextView>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="195dp"
+            android:contentDescription="Quzz image"
+            tools:src="@drawable/cr7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="9"
+                android:minHeight="50dp"
+                android:progress="5" />
+
+            <TextView
+                android:id="@+id/tv_process"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textSize="14sp"
+                tools:text="0/9"
+
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_opt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            tools:text="C.Ronaldo"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_opt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            tools:text="Messi"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_opt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            tools:text="Neymar"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_opt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            tools:text="Mbappe"
+
+            />
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#CDDC39"
+            android:text="SUBMIT"
+            android:textColor="#CDDC39"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+</ScrollView>
